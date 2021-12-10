@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import './styles/Base.scss';
+import 'bulma/css/bulma.min.css';
+import HomePageComponent from "./Components/Pages/HomePage.component";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <HomePageComponent />
+      <div className="buttons">
+        <button className="button is-success is-small">Small</button>
+        <button className="button is-warning is-medium">Medium</button>
+        <button className="button is-danger is-large">Large</button>
+      </div>
     </div>
   );
 }
