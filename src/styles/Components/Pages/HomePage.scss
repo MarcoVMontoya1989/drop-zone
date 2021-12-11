@@ -12,3 +12,53 @@ a {
   text-decoration: none;
   color: black;
 }
+
+#test-column {
+  background-color: black;
+  width: 131px;
+  height: 43px;
+
+  font-family: $rozha-normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 50%;
+  /* identical to box height, or 111% */
+
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+#title-roboto {
+  //font-family: $roboto-normal;
+  //font-size: 48px;
+  //font-style: normal;
+  //font-weight: 900;
+  //line-height: 40px;
+  //letter-spacing: 0.15em;
+  //text-align: center;
+
+  font-family: $roboto-normal;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 40px;
+  /* identical to box height, or 83% */
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+#bottom-title-roboto {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.15em;
+  text-align: center;
+}

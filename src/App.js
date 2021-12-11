@@ -2,17 +2,23 @@ import './App.css';
 import './styles/Base.scss';
 import 'bulma/css/bulma.min.css';
 import HomePageComponent from "./Components/Pages/HomePage.component";
+import {Fragment} from "react";
+import NavbarComponent from "./Components/Component/Navbar.component";
 
 function App() {
   return (
-    <div className="main">
-      <HomePageComponent />
-      <div className="buttons">
-        <button className="button is-success is-small">Small</button>
-        <button className="button is-warning is-medium">Medium</button>
-        <button className="button is-danger is-large">Large</button>
-      </div>
-    </div>
+    <Fragment>
+      {/*<section className="hero is-fullheight-with-navbar is-default">*/}
+      <section className="hero is-fullheight is-default">
+        <div className="hero-head">
+          <NavbarComponent/>
+        </div>
+
+        <div className="hero-body">
+          <HomePageComponent/>
+        </div>
+      </section>
+    </Fragment>
   );
 }
 
