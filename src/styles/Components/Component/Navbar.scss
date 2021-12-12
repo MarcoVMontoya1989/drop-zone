@@ -4,17 +4,12 @@
 
 .drop-zone {
   flex-direction: column;
-  //justify-content: flex-end;
-  //border: 5px red dashed;
-  //width: 300px;
 
   .drop-content {
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin-bottom: 8px !important;
-    //border: 5px purple solid;
   }
 
   .drop-content-end {

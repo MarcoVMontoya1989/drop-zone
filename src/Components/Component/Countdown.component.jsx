@@ -8,6 +8,13 @@ import Countdown from 'react-countdown';
 * Styles:
 *   Font: Rozha One
 *
+* Doubts:
+*
+* What happens if days are over 99?
+* Makes no sense to separate in two containers
+* So I will assume that the design/mockup will
+* only handle from 0 days to 99 days and not above
+* of limit. (until we can talk with UX/UI team)
 * */
 
 const CountdownComponent = () => {
