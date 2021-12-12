@@ -14,54 +14,53 @@ const CountdownComponent = () => {
 
   // const [hello, setHello] = useState('Hello World!');
 
-  const renderer = ({days,hours, minutes, seconds, completed}) => {
+  const renderer = ({days, hours, minutes, seconds, completed}) => {
     if (completed) {
       // Render a completed state
       return <BuyNow/>;
     } else {
       // Render a countdown
       return (
-      <div className="container clock-container">
-        <div className="clock-column">
-          <p className="clock-day clock-timer">{days}</p>
-          <p className="clock-label">Days</p>
+        <div className="container clock-container">
+          <div className="clock-column">
+            <p className="clock-day clock-timer">{days}</p>
+            <p className="clock-label">Days</p>
+          </div>
+
+          <div className="clock-column">
+            <p className="clock-hours clock-timer">{hours}</p>
+            <p className="clock-label">Hours</p>
+          </div>
+
+          <div className="clock-column">
+            <p className="clock-minutes clock-timer">{minutes}</p>
+            <p className="clock-label">Minutes</p>
+          </div>
+
+          <div className="clock-column">
+            <p className="clock-seconds clock-timer">{seconds}</p>
+            <p className="clock-label">Seconds</p>
+          </div>
         </div>
 
-        <div className="clock-column">
-          <p className="clock-hours clock-timer">{hours}</p>
-          <p className="clock-label">Hours</p>
-        </div>
-
-        <div className="clock-column">
-          <p className="clock-minutes clock-timer">{minutes}</p>
-          <p className="clock-label">Minutes</p>
-        </div>
-
-        <div className="clock-column">
-          <p className="clock-seconds clock-timer">{seconds}</p>
-          <p className="clock-label">Seconds</p>
-        </div>
-      </div>
-
-    );
+      );
     }
+  }
+
+  const BuyNow = () => {
+      return <span>Hello</span>
     }
+  ;
 
-    const BuyNow = () =>
-      {
-        return <span>Hello</span>
-      }
-    ;
+  return (
+    <Fragment>
+      <Countdown
+        date={Date.now() + 400000000}
+        renderer={renderer}
+      >
+      </Countdown>
+    </Fragment>
+  );
+};
 
-    return (
-      <Fragment>
-        <Countdown
-          date={Date.now() + 400000000}
-          renderer={renderer}
-        >
-        </Countdown>
-      </Fragment>
-    );
-    };
-
-    export default CountdownComponent;
+export default CountdownComponent;
