@@ -33,14 +33,6 @@ a {
 }
 
 #title-roboto {
-  //font-family: $roboto-normal;
-  //font-size: 48px;
-  //font-style: normal;
-  //font-weight: 900;
-  //line-height: 40px;
-  //letter-spacing: 0.15em;
-  //text-align: center;
-
   font-family: $roboto-normal;
   font-style: normal;
   font-weight: 900;
@@ -54,7 +46,7 @@ a {
 }
 
 #bottom-title-roboto {
-  font-family: Roboto;
+  font-family: $roboto-normal;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
