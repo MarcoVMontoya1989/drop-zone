@@ -1,13 +1,10 @@
 .clock-container {
-  //position: relative;
   display: flex;
+  justify-content: center;
   flex-direction: row;
   align-items: center;
   height: 10rem;
-  //width: 60rem;
   background-color: transparent;
-  //border-radius: 3px;
-  //box-shadow: none;
 }
 
 .clock-column {
@@ -27,9 +24,11 @@
     top: 0px;
     right: -50px;
   }
+
   &:last-child {
     &::after {
       display: none;
+      background-color: red !important;
     }
   }
 }

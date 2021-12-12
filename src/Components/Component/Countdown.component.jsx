@@ -21,14 +21,6 @@ const CountdownComponent = () => {
     } else {
       // Render a countdown
       return (
-
-        // <span className={'clock'}>
-        // <h1>{hours}</h1> : <h2>{minutes}</h2>: <h3>{seconds}</h3>
-        // </span>
-
-        // <div className="clock-input">
-        //   <input type="date" name="time-to" className="time-to" id="time-to" value="" onChange="calcTime(this.value)">
-        // </div>
       <div className="container clock-container">
         <div className="clock-column">
           <p className="clock-day clock-timer">{days}</p>
