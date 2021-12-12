@@ -41,8 +41,14 @@
   padding-top: 25px;
   text-transform: uppercase;
   color: black;
-  font-size: 14px;
   text-align: center;
+  font-family: $roboto-normal;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 28px;
+  letter-spacing: 0.15em;
+
 }
 
 .clock-timer {
@@ -50,14 +56,16 @@
   justify-content: center;
   align-items: center;
 
-  width: 60px;
-  height: 79px;
+  width: 58px;
+  height: 73px;
 
   background-color: black;
   color: #FFF;
   font-family: $rozha-normal;
-  font-size: 36px;
-  line-height: 1;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 40px;
 }
 
 .clock-input {

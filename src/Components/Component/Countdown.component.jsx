@@ -20,8 +20,13 @@ const CountdownComponent = () => {
       return <BuyNow/>;
     } else {
       // Render a countdown
+      // console.log(typeof days); //TODO Styles to separate in two boxes
+
       return (
         <div className="container clock-container">
+
+          {/*TODO Separate the amount in two boxes*/}
+
           <div className="clock-column">
             <p className="clock-day clock-timer">{days}</p>
             <p className="clock-label">Days</p>
@@ -34,12 +39,12 @@ const CountdownComponent = () => {
 
           <div className="clock-column">
             <p className="clock-minutes clock-timer">{minutes}</p>
-            <p className="clock-label">Minutes</p>
+            <p className="clock-label">Mins</p>
           </div>
 
           <div className="clock-column">
             <p className="clock-seconds clock-timer">{seconds}</p>
-            <p className="clock-label">Seconds</p>
+            <p className="clock-label">Secs</p>
           </div>
         </div>
 
@@ -55,7 +60,7 @@ const CountdownComponent = () => {
   return (
     <Fragment>
       <Countdown
-        date={Date.now() + 400000000}
+        date={Date.now() + 4000000000}
         renderer={renderer}
       >
       </Countdown>
