@@ -19,15 +19,19 @@ import Countdown from 'react-countdown';
 
 const CountdownComponent = () => {
 
-  // const [hello, setHello] = useState('Hello World!');
-
   const renderer = ({days, hours, minutes, seconds, completed}) => {
     if (completed) {
       // Render a completed state
+      // An empty one because there's no mock
       return <BuyNow/>;
     } else {
-      // Render a countdown
-      // console.log(typeof days); //TODO Styles to separate in two boxes
+
+      let splitDays = [...days + ''];
+      let splitHours = [...hours + ''];
+      let splitMins = [...minutes + ''];
+      let splitSecs = [...seconds + ''];
+
+      // console.log(splitDays.length >= 0);
 
       return (
         <div className="container clock-container">
@@ -35,22 +39,34 @@ const CountdownComponent = () => {
           {/*TODO Separate the amount in two boxes*/}
 
           <div className="clock-column">
-            <p className="clock-day clock-timer">{days}</p>
+            <div className="clock-count">
+              <p className="clock-day clock-timer">{splitDays[0]}</p>
+              <p className="clock-day clock-timer">{splitDays[1]}</p>
+            </div>
             <p className="clock-label">Days</p>
           </div>
 
           <div className="clock-column">
-            <p className="clock-hours clock-timer">{hours}</p>
+            <div className="clock-count">
+              <p className="clock-hours clock-timer">{splitHours[0]}</p>
+              <p className="clock-hours clock-timer">{splitHours[1]}</p>
+            </div>
             <p className="clock-label">Hours</p>
           </div>
 
           <div className="clock-column">
-            <p className="clock-minutes clock-timer">{minutes}</p>
+            <div className="clock-count">
+              <p className="clock-minutes clock-timer">{splitMins[0]}</p>
+              <p className="clock-minutes clock-timer">{splitMins[1]}</p>
+            </div>
             <p className="clock-label">Mins</p>
           </div>
 
           <div className="clock-column">
-            <p className="clock-seconds clock-timer">{seconds}</p>
+            <div className="clock-count">
+              <p className="clock-seconds clock-timer">{splitSecs[0]}</p>
+              <p className="clock-seconds clock-timer">{splitSecs[1]}</p>
+            </div>
             <p className="clock-label">Secs</p>
           </div>
         </div>
@@ -60,17 +76,15 @@ const CountdownComponent = () => {
   }
 
   const BuyNow = () => {
-      return <span>Hello</span>
+      return <span>Now Available!</span>
     }
   ;
 
   return (
     <Fragment>
       <Countdown
-        date={Date.now() + 4000000000}
-        renderer={renderer}
-      >
-      </Countdown>
+        date={Date.now() + 4000000}
+        renderer={renderer}/>
     </Fragment>
   );
 };
