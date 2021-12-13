@@ -1,8 +1,7 @@
-// import './App.css';
+import {Fragment} from "react";
 import './styles/Base.scss';
 import 'bulma/css/bulma.min.css';
 import HomePageComponent from "./Components/Pages/HomePage.component";
-import {Fragment} from "react";
 import NavbarComponent from "./Components/Component/Navbar.component";
 
 function App() {
