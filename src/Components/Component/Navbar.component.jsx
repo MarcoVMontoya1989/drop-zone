@@ -7,10 +7,10 @@ const NavbarComponent = () => {
         <div className="navbar-end navbar-end-force">
           <a className="navbar-item navbar-item-drop">
             <div className="columns drop-zone">
-              <div className="column drop-content" id='test-column'>
+              <div className="column drop-content" id='rohza-text'>
                 Drop
               </div>
-              <div className="column drop-content drop-content-end" id='test-column'>
+              <div className="column drop-content drop-content-end" id='rohza-text'>
                 Zone
               </div>
             </div>

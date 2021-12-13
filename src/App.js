@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import './styles/Base.scss';
 import 'bulma/css/bulma.min.css';
 import HomePageComponent from "./Components/Pages/HomePage.component";
