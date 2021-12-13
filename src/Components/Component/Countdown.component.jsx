@@ -1,4 +1,4 @@
-import React, {useState, Fragment} from 'react';
+import React, {Fragment} from 'react';
 import Countdown from 'react-countdown';
 
 /*
@@ -19,25 +19,30 @@ import Countdown from 'react-countdown';
 
 const CountdownComponent = () => {
 
+  const pad = (n, width, z) => {
+    z = z || '0';
+    n = n + '';
+
+    return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+  };
+
+  const BuyNow = () => {
+    return <span>Now Available!</span>
+  };
+
   const renderer = ({days, hours, minutes, seconds, completed}) => {
     if (completed) {
-      // Render a completed state
       // An empty one because there's no mock
       return <BuyNow/>;
     } else {
 
-      let splitDays = [...days + ''];
-      let splitHours = [...hours + ''];
-      let splitMins = [...minutes + ''];
-      let splitSecs = [...seconds + ''];
-
-      // console.log(splitDays.length >= 0);
+      let splitDays = [...pad(days, 2) + ''];
+      let splitHours = [...pad(hours, 2) + ''];
+      let splitMins = [...pad(minutes, 2) + ''];
+      let splitSecs = [...pad(seconds, 2) + ''];
 
       return (
         <div className="container clock-container">
-
-          {/*TODO Separate the amount in two boxes*/}
-
           <div className="clock-column">
             <div className="clock-count">
               <p className="clock-day clock-timer">{splitDays[0]}</p>
@@ -70,20 +75,14 @@ const CountdownComponent = () => {
             <p className="clock-label">Secs</p>
           </div>
         </div>
-
       );
     }
-  }
-
-  const BuyNow = () => {
-      return <span>Now Available!</span>
-    }
-  ;
+  };
 
   return (
     <Fragment>
       <Countdown
-        date={Date.now() + 4000000}
+        date={Date.now() + 400000000}
         renderer={renderer}/>
     </Fragment>
   );
