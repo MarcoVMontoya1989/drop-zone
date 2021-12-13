@@ -70,11 +70,24 @@ This "challenge" was interesting to me, because I never thought to separate the 
 experienced it or designed it, it was very fun to experiment with many ideas and crazy ones, I am satisfied with my 
 result, I think is almost the same mock from the Figma
 
-I would like to share my opinion about this challenge and what I think that I can improve the prject:
+I would like to share my opinion about this challenge and what I think that I can improve the project:
 
 1) I would rather to fetch the IRL decrement time from a server rather to local one because I think starting in a specific date is better to compare from a server/API (due to an unexpected change of date for example, rather to change this page for production we can calmly change the API one) to show the exact release date and of course for performance.
 2) Mocking from the Figma without different screens dimension for positions and sizes it was kinda tricky, because I was not sure if the sizes is something that can satisfy to UX/UI team, so if I have the opportunity to talk with them to see what happens for specific screens, or if the time is out then what?, etc. I think it will be a great idea to have a meeting with them to fulfill the real goal.
 3) I would like to add a loading page to show already a full DOM to avoid and empty page, considering that not all has the same Internet speed though.
+
+And of course, the important, legendary Unit Testing, I made some Test for this project with Jest and Enzyme, but then I started to think that 
+it's going to be a full project and (please understand my perspective) feels like a bit "unfair" when I mean for unfair, is because I don't 
+work in this company that is paying me for my time and efforts, and I agree with Emma Bostian from Spotify that I agree with.
+
+Of course, I completely understand how incredibly important is the unit test to avoid potential bugs, security, maintenance, best practices, etc. to show exactly what it should show
+I absolutely agree with this, also I would like to think that it depends on the team though, because if the team does not like the solution I have to 
+change almost everything, so my efforts maybe will be wasted.
+
+So, any feedback is welcome, to be honest, I very convinced that working with this amazing team from Diff is a dream one, I am truly 
+surprised from all cases in all projects with so many different clients, and I started to read the documentation from Shopify to see 
+what are the benefits, advantages, disadvantages, how easy or hard is to implement the API's to my future projects, and seems so incredibly
+solid.
 
 Oh, last thing:
 Would you like to change the value of time to a specific one?
