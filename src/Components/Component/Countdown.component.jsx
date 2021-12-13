@@ -15,6 +15,11 @@ import Countdown from 'react-countdown';
 * So I will assume that the design/mockup will
 * only handle from 0 days to 99 days and not above
 * of limit. (until we can talk with UX/UI team)
+*
+* For "IRL" Timer, I would add the value in server to keep
+* the real time decrement rather to implement whether in localStorage
+* or in Redux Persistor, so everytime the page loads/refresh can fetch
+* to Time API
 * */
 
 const CountdownComponent = () => {
@@ -27,7 +32,7 @@ const CountdownComponent = () => {
   };
 
   const BuyNow = () => {
-    return <span>Now Available!</span>
+    return <span className='title'>Now Available!</span>
   };
 
   const renderer = ({days, hours, minutes, seconds, completed}) => {
