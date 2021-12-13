@@ -82,7 +82,7 @@ const CountdownComponent = () => {
   return (
     <Fragment>
       <Countdown
-        date={Date.now() + 400000000}
+        date={Date.now() + 1152725000}
         renderer={renderer}/>
     </Fragment>
   );
