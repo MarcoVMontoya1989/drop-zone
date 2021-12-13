@@ -33,3 +33,45 @@ You can work on this solution in one of two ways: by forking this repository, or
 
 ## Mockups
 https://www.figma.com/file/OGZEMBBrVIM3n2CdBYsdEK/Drop-Zone?node-id=0%3A1
+
+
+# =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+## Getting Started
+
+First, install packages:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+After installation, run in local:
+
+```bash
+npm run start
+# or
+yarn start
+```
+
+## Some comments:
+
+Hello, I am Marco Antonio, and I am grateful to take an opportunity to take this project
+
+After I read the "requirements" and I took the opportunity  that is "open book" to use the stack I like it, so here's the stack:
+
+1) React with Plain JS
+2) Bulma (Lately I was playing with this library, and I like it)
+3) SCSS (I love SCSS so why not?)
+4) Countdown React library to spend less time writing code in plain JS to wrap the component, and it fulfill the goal
+
+This "challenge" was interesting to me, because I never thought to separate the digits in two "boxes/containers" I never
+experienced it or designed it, it was very fun to experiment with many ideas and crazy ones, I am satisfied with my 
+result, I think is almost the same mock from the Figma
+
+I would like to share my opinion about this challenge and what I think that I can improve the prject:
+
+1) I would rather to fetch the IRL decrement time from a server rather to local one because I think starting in a specific date is better to compare from a server/API (due to an unexpected change of date for example, rather to change this page for production we can calmly change the API one) to show the exact release date and of course for performance.
+2) Mocking from the Figma without different screens dimension for positions and sizes it was kinda tricky, because I was not sure if the sizes is something that can satisfy to UX/UI team, so if I have the opportunity to talk with them to see what happens for specific screens, or if the time is out then what?, etc. I think it will be a great idea to have a meeting with them to fulfill the real goal.
+3) I would like to add a loading page to show already a full DOM to avoid and empty page, considering that not all has the same Internet speed though.
