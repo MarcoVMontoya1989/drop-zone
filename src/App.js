@@ -8,9 +8,8 @@ import NavbarComponent from "./Components/Component/Navbar.component";
 function App() {
   return (
     <Fragment>
-      {/*<section className="hero is-fullheight-with-navbar is-default">*/}
       <section className="hero is-fullheight is-default">
-        <div className="hero-head">
+        <div className="hero-head head-mobile">
           <NavbarComponent/>
         </div>
 
