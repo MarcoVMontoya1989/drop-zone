@@ -5,91 +5,88 @@
   align-items: center;
   height: 10rem;
   background-color: transparent;
-}
 
-.clock-column {
-  margin-right: 1.2rem;
-  text-align: center;
-  position: relative;
+  .clock-column {
+    margin-right: 1.2rem;
+    text-align: center;
+    position: relative;
 
-  @media screen and (max-width: 768px) {
-    margin-right: 0.8rem;
-  }
+    @media screen and (max-width: 768px) {
+      margin-right: 0.8rem;
+    }
 
-  .clock-count {
-    display: flex;
+    .clock-count {
+      display: flex;
 
-    p {
-      margin-right: 10px;
+      p {
+        margin-right: 10px;
 
-      @media (max-width: 768px) {
-        margin-right: 4px;
+        @media (max-width: 768px) {
+          margin-right: 4px;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
       }
 
-      &:last-child {
-        margin-right: 0;
+      .clock-timer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 58px;
+        height: 73px;
+
+        background-color: black;
+        color: #FFF;
+        font-family: $rozha-normal;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 40px;
+
+
+        @media screen and (max-width: 1023px) {
+          width: 45px;
+        }
+
+        @media screen and (max-width: 768px) {
+          width: 31.38px;
+          height: 39.5px;
+          font-size: 24px;
+        }
+
+        @media screen and (max-width:450px) {
+          width: 32px;
+        }
       }
     }
-  }
 
-  &:last-child {
-    &::after {
-      display: none;
+    .clock-label {
+      padding-top: 25px;
+      text-transform: uppercase;
+      color: black;
+      text-align: center;
+      font-family: $roboto-normal;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 28px;
+      letter-spacing: 0.15em;
+
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+        line-height: 16px;
+      }
     }
-  }
-}
 
-.clock-column:last-child {
-  margin-right: 0;
-}
+    &:last-child {
+      margin-right: 0;
 
-.clock-timer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 58px;
-  height: 73px;
-
-  background-color: black;
-  color: #FFF;
-  font-family: $rozha-normal;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 48px;
-  line-height: 40px;
-
-
-  @media screen and (max-width: 1023px) {
-    width: 45px;
-  }
-
-  @media screen and (max-width: 768px) {
-    width: 31.38px;
-    height: 39.5px;
-    font-size: 24px;
-  }
-
-  @media screen and (max-width:450px) {
-    width: 32px;
-  }
-
-}
-
-.clock-label {
-  padding-top: 25px;
-  text-transform: uppercase;
-  color: black;
-  text-align: center;
-  font-family: $roboto-normal;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 28px;
-  letter-spacing: 0.15em;
-
-  @media screen and (max-width: 768px) {
-    font-size: 14px;
-    line-height: 16px;
+      &::after {
+        display: none;
+      }
+    }
   }
 }
