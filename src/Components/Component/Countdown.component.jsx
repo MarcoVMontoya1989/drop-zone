@@ -1,8 +1,10 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useState} from 'react';
 import Countdown from 'react-countdown';
 import pad from "../Utils/arrayPad";
 
 const CountdownComponent = () => {
+
+  const [timer] = useState(1152725000);
 
   const BuyNow = () => {
     return <span className='title'>Now Available!</span>
@@ -59,7 +61,7 @@ const CountdownComponent = () => {
   return (
     <Fragment>
       <Countdown
-        date={Date.now() + 1152725000}
+        date={Date.now() + timer}
         renderer={timerContent}/>
     </Fragment>
   );
