@@ -13,7 +13,8 @@ describe('', function () {
   });
 
   test('It should render component', () => {
-    expect(wrapper).toMatchSnapshot();
+    const AppRender = render(<App />);
+    expect(AppRender).toMatchSnapshot();
   });
 
   test('It should render child component Navbar', () => {

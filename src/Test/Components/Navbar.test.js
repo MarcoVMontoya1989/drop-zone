@@ -7,7 +7,8 @@ describe('Navbar Tests', function () {
   const wrapper = shallow(<NavbarComponent />);
 
   it('should render component', function () {
-    expect(wrapper).toMatchSnapshot();
+    const NavbarRender = render(<NavbarComponent />);
+    expect(NavbarRender).toMatchSnapshot();
   });
 
   it('should render text Drop Zone', function () {
